@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia del Ambulatorio</title>
+  <style>
+    body {
+      background-image: url('fondo.jpg'); /* Aplica la imagen de fondo a toda la página */
+      background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+      background-position: center; /* Centra la imagen de fondo */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      margin: 0; /* Elimina el margen predeterminado del body */
+      padding: 0; /* Elimina el padding predeterminado del body */
+      height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
+      display: flex; /* Habilita flexbox */
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center; /* Centra verticalmente */
+      font-family: Arial, sans-serif; /* Fuente predeterminada */
+    }
+
+    .contenedor {
+      max-width: 800px; /* Ancho máximo del contenedor */
+      width: 90%; /* Asegura que el contenedor se ajuste en pantallas pequeñas */
+      height: auto; /* Altura automática para el contenedor */
+      padding: 20px; /* Espaciado interno */
+      background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+      text-align: left; /* Alinea el texto a la izquierda */
+      overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado largo */
+    }
+
+    h2 {
+      text-align: center; /* Centra el título */
+      font-size: 1.8rem; /* Tamaño del título */
+      margin-bottom: 20px; /* Espaciado inferior */
+    }
+
+    p {
+      margin: 10px 0; /* Espaciado entre párrafos */
+      line-height: 1.6; /* Interlineado */
+      font-size: 1rem; /* Tamaño de fuente */
+    }
+
+    .boton-inicio {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: #007BFF; /* Color azul */
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-inicio:hover {
+      background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    }
+
+    /* Media query para pantallas pequeñas (teléfonos móviles) */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px; /* Agrega un margen interno */
+        justify-content: flex-start; /* Alinea el contenido al inicio */
+        align-items: flex-start;
+      }
+
+      .contenedor {
+        padding: 15px; /* Reduce el padding en pantallas pequeñas */
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        box-shadow: none; /* Elimina la sombra para simplificar el diseño */
+      }
+
+      h2 {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+      }
+
+      p {
+        font-size: 0.9rem; /* Reduce el tamaño de los párrafos */
+      }
+
+      .boton-inicio {
+        font-size: 0.9rem; /* Ajusta el tamaño del botón */
+        padding: 8px 16px;
+        width: 100%; /* Botón ocupa todo el ancho */
+        box-sizing: border-box; /* Asegura que el padding no desborde */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h2>Historia del Ambulatorio</h2>
+    <p>En el año 1960, se dieron los primeros pasos en la población de Tacuato hacia la medicina ambulatoria rural. En aquel entonces, se alquiló la casa de la señora Margarita Delgado, ubicada al lado de lo que hoy se conoce como el puesto policial. Este fue el primer espacio donde se brindó atención médica a la comunidad, con la asignación de un médico rural que atendía a los pacientes un día por semana.</p>
+    <p>Entre los profesionales que ejercieron en esa época se encuentran el Dr. Loyo, el Dr. Inseni Noya, el Dr. Leonardo Revilla Cumare, el Dr. Robertis y el Dr. Van Grieken. Por su parte, el personal de enfermería estuvo conformado inicialmente por la Sra. Engracia Telleria de Duno, quien laboró durante dos años, y posteriormente por la Sra. Maruja Chirinos de Ruiz. En la década de 1970, el dispensario se trasladó a un nuevo local ubicado en la calle San Bosco, en una casa perteneciente a la familia Arcaya González.</p>
+    <p>Durante este período, el dispensario no solo cumplía con funciones asistenciales, sino que también desempeñaba un papel educativo en la formación de profesionales en enfermería. Con el paso de los años y el crecimiento de la población, surgió la necesidad de ampliar los servicios de salud. Fue así como, a finales de los años 70, se construyó un nuevo dispensario en la calle San José, lugar donde funciona hasta la actualidad.</p>
+
+    <div style="text-align: center;">
+      <a href="redireccion.html" class="boton-inicio">Inicio</a>
+    </div>
+  </div>
+</body>
+</html>

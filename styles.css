@@ -1,0 +1,78 @@
+/* Estilos generales */
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("fondo.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contenedor {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 90%; /* Asegura que el contenedor se ajuste en pantallas pequeñas */
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.contenedor img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.boton-inicio, .boton-redireccion {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto;
+}
+
+.boton-inicio:hover, .boton-redireccion:hover {
+    background-color: #0056b3;
+}
+
+/* Media query para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 600px) {
+    body, html {
+        justify-content: flex-start; /* Alinea el contenido al inicio */
+        align-items: flex-start;
+        padding: 10px; /* Agrega un margen interno */
+    }
+
+    .contenedor {
+        padding: 15px; /* Reduce el padding en pantallas pequeñas */
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        box-shadow: none; /* Elimina la sombra para simplificar el diseño */
+    }
+
+    .contenedor img {
+        margin: 10px 0; /* Reduce el margen vertical */
+    }
+
+    .boton-inicio, .boton-redireccion {
+        font-size: 0.9rem; /* Ajusta el tamaño del botón */
+        padding: 8px 16px;
+        width: 100%; /* Botón ocupa todo el ancho */
+        box-sizing: border-box; /* Asegura que el padding no desborde */
+    }
+}

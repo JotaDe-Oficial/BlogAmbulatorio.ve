@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información</title>
+    <style>
+        body {
+            background-image: url('fondo.jpg'); /* Establece fondo.jpg como imagen de fondo */
+            background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+            background-position: center; /* Centra la imagen de fondo */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            margin: 0; /* Elimina el margen predeterminado del body */
+            padding: 0; /* Elimina el padding predeterminado del body */
+            font-family: Arial, sans-serif; /* Fuente predeterminada */
+            height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
+            display: flex; /* Habilita flexbox */
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+        }
+
+        .contenedor {
+            max-width: 800px; /* Ancho máximo del contenedor */
+            width: 90%; /* Asegura que el contenedor se ajuste en pantallas pequeñas */
+            height: auto; /* Altura automática para el contenedor */
+            padding: 20px; /* Espaciado interno */
+            background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgb(0, 0, 0); /* Sombra */
+            text-align: center; /* Centra el texto dentro del contenedor */
+            overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado largo */
+        }
+
+        h1 {
+            font-size: 1.8rem; /* Tamaño del título */
+            margin-bottom: 20px; /* Espaciado inferior */
+        }
+
+        p, ul {
+            line-height: 1.5; /* Interlineado de 1.5 */
+            font-size: 1rem; /* Tamaño de fuente */
+            margin: 10px 0; /* Espaciado entre párrafos y listas */
+        }
+
+        ul {
+            padding-left: 20px; /* Espaciado interno para las listas */
+            text-align: left; /* Alinea las listas a la izquierda */
+        }
+
+        .boton-inicio {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold; /* Texto en negrita */
+            color: white;
+            background-color: #007BFF; /* Color azul */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton-inicio:hover {
+            background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+        }
+
+        /* Media query para pantallas pequeñas (teléfonos móviles) */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px; /* Agrega un margen interno */
+                justify-content: flex-start; /* Alinea el contenido al inicio */
+                align-items: flex-start;
+            }
+
+            .contenedor {
+                padding: 15px; /* Reduce el padding en pantallas pequeñas */
+                font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+                width: 100%; /* Ocupa todo el ancho disponible */
+                box-shadow: none; /* Elimina la sombra para simplificar el diseño */
+            }
+
+            h1 {
+                font-size: 1.5rem; /* Reduce el tamaño del título */
+            }
+
+            p, ul {
+                font-size: 0.9rem; /* Reduce el tamaño de los párrafos y listas */
+            }
+
+            .boton-inicio {
+                font-size: 0.9rem; /* Ajusta el tamaño del botón */
+                padding: 8px 16px;
+                width: 100%; /* Botón ocupa todo el ancho */
+                box-sizing: border-box; /* Asegura que el padding no desborde */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Programas y Servicios</h1>
+        <p>El Ambulatorio Carmen Isidra Bracho ofrece una variedad de programas y servicios diseñados para cubrir las necesidades de salud de la comunidad. Entre ellos se encuentran:</p>
+        <ul>
+            <li><strong>Control de planificación familiar: </strong>Se realiza los días lunes.</li>
+            <li><strong>Control prenatal: </strong>Se lleva a cabo los días martes.</li>
+            <li><strong>Control de niño sano: </strong>Se atiende los días miércoles.</li>
+            <li><strong>CAREMT: </strong>Se ofrece los días jueves.</li>
+            <li><strong>Nutrición: </strong>Se brinda los días viernes.</li>
+        </ul>
+        <h1>También cuenta con: </h1>
+        <ul>
+            <li><strong>Triaje: </strong>Donde se realiza la clasificación de pacientes según su urgencia.</li>
+            <li><strong>Sala de observación: </strong>Para el monitoreo de pacientes que requieren atención continua.</li>
+            <li><strong>Inmunización: </strong>Área dedicada a la aplicación de vacunas.</li>
+            <li><strong>Sala de curas: </strong>Para la atención de heridas y procedimientos menores.</li>
+            <li><strong>Sala de parto (Pre-Post): </strong>Para la atención de mujeres embarazadas.</li>
+            <li><strong>Sala de trauma shock: </strong>Para la atención de emergencias.</li>
+            <li><strong>Consultorio de odontología: </strong>Servicios de atención dental disponibles.</li>
+            <li><strong>Coordinación de enfermería: </strong>Donde se gestionan las actividades del personal de enfermería.</li>
+            <li><strong>Archivo: </strong>Para el almacenamiento y organización de historias médicas.</li>
+            <li><strong>Ambulancia: </strong>Para el traslado de pacientes en situaciones de emergencia.</li>
+        </ul>
+        <a href="redireccion.html" class="boton-inicio">Inicio</a>
+    </div>
+</body>
+</html>
